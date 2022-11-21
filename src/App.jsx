@@ -1,12 +1,11 @@
-import Options from './components/Options';
+import OrderEntry from './pages/OrderEntry';
 import OrderSummary from './pages/OrderSummary';
 
 function App() {
   return (
     <div>
       <h1>Sundae App</h1>
-      <Options optionType='scoops' />
-      <Options optionType='toppings' />
+      <OrderEntry />
       <OrderSummary />
     </div>
   );

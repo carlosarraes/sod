@@ -1,5 +1,12 @@
+import Options from '../components/Options';
+
 const OrderEntry = () => {
-  return <div>OrderEntry</div>;
+  return (
+    <div>
+      <Options optionType='scoops' />
+      <Options optionType='toppings' />
+    </div>
+  );
 };
 
 export default OrderEntry;
