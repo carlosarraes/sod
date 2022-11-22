@@ -1,13 +1,17 @@
+import Container from 'react-bootstrap/Container';
 import OrderEntry from './pages/OrderEntry';
 import OrderSummary from './pages/OrderSummary';
+import { OrderDetailsProvider } from './contexts/OrderDetails';
 
 function App() {
   return (
-    <div>
+    <Container>
       <h1>Sundae App</h1>
-      <OrderEntry />
-      <OrderSummary />
-    </div>
+      <OrderDetailsProvider>
+        <OrderEntry />
+        <OrderSummary />
+      </OrderDetailsProvider>
+    </Container>
   );
 }
 
