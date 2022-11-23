@@ -21,7 +21,7 @@ const Options = ({ optionType }) => {
   }, [optionType]);
 
   const ItemComponent = optionType === 'scoops' ? ScoopOption : ToppingOption;
-  const title = optionType[0].toUpperCase() + optionType.slice(1);
+  const title = optionType[0].toUpperCase() + optionType.slice(1).toLowerCase();
 
   const optionsItem = items.map((item) => (
     <ItemComponent
